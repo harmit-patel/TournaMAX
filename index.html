@@ -1,0 +1,168 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tournify</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <section id="header">
+            <a href="#"><img src="images/home-img/logo.png" class="logo" alt="logo"></a>
+            <div>
+                <ul id="navbar">
+                    <li><a class="active" href="/index.html">Home</a></li>
+                    <li><a href="login.html">Login</a></li>
+                    <li><a href="other-tabs/about/about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="hero">
+            <h2>Manage and Organise Tournaments</h2>
+            <h1>Here, For FREE</h1>
+            <p>control anything and everything in your tournaments</p>
+            <button onclick="scrollToGames()">Get started &#10137;</button>
+        </section>
+
+        <script>
+            function scrollToGames() {
+                var gamesSection = document.getElementById('games');
+                var headerHeight = document.getElementById('header').offsetHeight;
+                var gamesHeadingHeight = document.getElementById('games-heading').offsetHeight-100;
+                var scrollOffset = headerHeight + gamesHeadingHeight; // Adjust the offset as needed
+                window.scroll({
+                top: gamesSection.offsetTop - scrollOffset,
+                behavior: 'smooth'
+                });
+            }
+        </script>
+
+        <section id="games" class="section-p1">
+            <h2 id="games-heading">Games</h2>
+            <p>choose your category</p>
+            <div class="g-container">
+                <div class="game">
+                    <img src="images/games-img/chess.jpg">
+                    <div class="des">
+                        <h3>Chess</h3>
+                        <button class="org"><a href="pages/chess/chess_reg.html" target="_blank">Organise &#10137;</a></button>
+                    </div>
+                </div>
+
+                <div class="game">
+                    <img src="images/games-img/carrom.jpg" alt="">
+                    <div class="des">
+                        <h3>Carrom</h3>
+                        <button class="org"><a>Organise &#10137;</a></button>
+                    </div>
+                </div>
+
+                <div class="game">
+                    <img src="images/games-img/ludo.jpg" alt="">
+                    <div class="des">
+                        <h3>Ludo</h3>
+                        <button class="org"><a>Organise &#10137;</a></button>
+                    </div>
+                </div>
+
+                <div class="game">
+                    <img src="images/games-img/e-sports.png" alt="">
+                    <div class="des">
+                        <h3>E-Sports</h3>
+                        <button class="org"><a>Organise &#10137;</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="sports" class="section-p1">
+            <h2>Sports</h2>
+            <p>choose your category</p>
+            <div class="sp-container">
+                <div class="sport">
+                    <img src="images/sports-img/crick.jpg" alt="">
+                    <div class="des">
+                        <h3>Cricket</h3>
+                        <button class="org"><a>Organise &#10137;</a></button>
+                    </div>
+                </div>
+
+                <div class="sport">
+                    <img src="images/sports-img/foot.jpg" alt="">
+                    <div class="des">
+                        <h3>Football</h3>
+                        <button class="org"><a>Organise &#10137;</a></button>
+                    </div>
+                </div>
+
+                <div class="sport">
+                    <img src="images/sports-img/volley.jpg" alt="">
+                    <div class="des">
+                        <h3>Volleyball</h3>
+                        <button class="org"><a>Organise &#10137;</a></button>
+                    </div>
+                </div>
+
+                <div class="sport">
+                    <img src="images/sports-img/tugofwar.png" alt="">
+                    <div class="des">
+                        <h3>Tug of War</h3>
+                        <button class="org"><a>Organise &#10137;</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="races" class="section-p1">
+            <h2>Races</h2>
+            <p>choose your category</p>
+            <div class="r-container">
+                <div class="race">
+                    <img src="images/races-img/relay.png" alt="">
+                    <div class="des">
+                        <h3>Relay</h3>
+                        <button class="org"><a>Organise &#10137;</a></button>
+                    </div>
+                </div>
+
+                <div class="race">
+                    <img src="images/races-img/hund.png" alt="">
+                    <div class="des">
+                        <h3>100m</h3>
+                        <button class="org"><a>Organise &#10137;</a></button>
+                    </div>
+                </div>
+
+                <div class="race">
+                    <img src="images/races-img/two-hund.png" alt="">
+                    <div class="des">
+                        <h3>200m</h3>
+                        <button class="org"><a>Organise &#10137;</a></button>
+                    </div>
+                </div>
+
+                <div class="race">
+                    <img src="images/races-img/marathon.png" alt="">
+                    <div class="des">
+                        <h3>Marathon</h3>
+                        <button class="org"><a>Organise &#10137;</a></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="banner">
+            <div class="banner-content">
+                <h4>Thanks</h4>
+                <h2>For supporting us....</h2>
+                <p>MAKE your tournaments now!</p>
+                <button>Learn More</button>
+            </div>
+        </section>
+        
+        
+    </body>
+    </html>
