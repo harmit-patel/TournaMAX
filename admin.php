@@ -3,11 +3,7 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "admin";
-
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-
-// Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -23,7 +19,6 @@ $stmt->execute();
 $result = $stmt->get_result();
 
 if ($result->num_rows > 0) {
-  // Redirect to the admin dashboard page
   header('Location: access.html');
 } else {
   echo "Invalid email or password";
