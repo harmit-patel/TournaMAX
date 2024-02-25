@@ -15,10 +15,10 @@ organising and manageing Platform.
 - Creates unique random pools of matches for the users.
 - Displays winners
 - Manages every round.
-- Login 
-- Signup
+- Notifies each and every partcipant using email
+- Admin Login 
 - Contact Us.
-- Log Out
+
 
 
 ## Technologies Used
