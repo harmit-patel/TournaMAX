@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="relay.css">
+    <title>Relay Registration</title>
+</head>
+<body>
+    <script>
+        function showPopup() {
+            alert("Entry Submitted Successfully!");
+            document.getElementById("registrationForm").reset(); // Clear form fields
+        }
+    </script>
+    <form action="http://localhost/TournaMAXfinal/relay_submit.php" method="post" onsubmit="showPopup()">
+        <h1>Registration Form</h1>
+        <label for="captainName">Captain Name:</label><br>
+        <input type="text" id="captainName" name="captainName"><br>
+        <label for="captainEmail">Captain Email:</label><br>
+        <input type="email" id="captainEmail" name="captainEmail"><br>
+        <label for="captainPhone">Captain Phone Number:</label><br>
+        <input type="tel" id="captainPhone" name="captainPhone"><br>
+        <label for="Captainid">Captain Student ID:</label><br>
+        <input type="text" id="captainID" name="captainID"><br>
+        <label for="branch">Branch Name:</label><br>
+        <input type="text" id="branch" name="branch" required><br>
+        <label for="sem">Sem:</label><br>
+        <input type="number" id="sem" name="sem" min="1" max="8" required><br>
+        <h2>Team Information</h2>
+        <label for="playerName1">Player 1 Name:</label><br>
+        <input type="text" id="playerName1" name="playerName1"><br>
+        <label for="studentID1">Player 1 Student ID:</label><br>
+        <input type="text" id="studentID1" name="studentID1"><br>
+        <label for="playerName2">Player 2 Name:</label><br>
+        <input type="text" id="playerName2" name="playerName2"><br>
+        <label for="studentID2">Player 2 Student ID:</label><br>
+        <input type="text" id="studentID2" name="studentID2"><br>
+        <label for="playerName3">Player 3 Name:</label><br>
+        <input type="text" id="playerName3" name="playerName3"><br>
+        <label for="studentID3">Player 3 Student ID:</label><br>
+        <input type="text" id="studentID3" name="studentID3"><br>
+        <input type="submit" class="submit" value="Register">
+    </form>
+</body>
+</html>

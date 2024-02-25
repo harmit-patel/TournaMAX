@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Relay_Entry</title>
+    <link rel="stylesheet" href="relay_entry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="logo1.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="ad_login.html">Admin</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>  
+    <section id="info">
+        <div class="chess">
+            <h1>Relay...</h1>
+        </div>
+        <h2>Rules for participation &#10137;</h2>
+        <span>Every participant should follow these rules...</span>
+        <ul class="rules slideshow">
+            <li>Team Composition: Teams usually consist of six players on the court at a time, although this can vary depending on the tournament's rules and format.</li>
+            <li>Scoring: Matches are typically played in a best-of-three or best-of-five sets format. Sets are usually played to 25 points, with a two-point advantage required to win the set.</li>
+            <li>Rotations: Players must rotate positions on the court clockwise after their team wins a rally and earns the right to serve.</li>
+            <li>Substitutions: Substitutions are allowed but typically must occur only when the ball is not in play, and the referee has been notified.</li>
+            <li>Equipment: Participants must wear appropriate attire, including jerseys or uniforms, shorts, and athletic shoes. Jewelry or any item deemed dangerous or distracting may be prohibited.</li>
+            <li>Privacy Policy: Participants should familiarize themselves with the website's privacy policy to understand how their personal information is collected, stored, and used.</li>
+            <li>Fair Play: Fair play is essential. Participants should strive to compete within the spirit of the game, respecting both the rules and the integrity of the competition.</li>
+            <li>Venue Reporting: Every participent should report to their designated venue 15 minutes ealry of their given time</li>
+            <li>Medical Emergency: In case of medical mergency, we have a dedicated medical team</li>
+        </ul>
+        <div id="reg">
+            <h4>Register here&#10137;</h4>
+            <button><a href="relay.html">Registration</a></button>
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var rules = document.querySelectorAll('.slideshow li');
+        var index = 0;
+
+        function showRule() {
+            if (index < rules.length) {
+                rules[index].style.display = 'block';
+                index++;
+                setTimeout(showRule, 1000); // Change slide every 1 second
+            }
+        }
+
+        showRule();
+    });
+    </script>  
+</body>
+</html>
