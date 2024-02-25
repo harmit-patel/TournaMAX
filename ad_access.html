@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Admin Access</title>
+    <link rel="stylesheet" href="ad_access.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo1.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a class="active" href="ad_login.html">Admin</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="games" class="section-p1">
+        <h2 id="games-heading">Games</h2>
+        <div class="g-container">
+            <div class="game">
+                <img src="chess.jpg">
+                <div class="des">
+                    <h3>Chess</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="chessl_btn" onclick="enterWinner()"><a href="chessw.html">Enter Winner&#10137;</a></button>
+                        <button class="org" id="chessl_btn" disabled><a href="chessl.html">Next Round&#10137;</a></button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game">
+                <img src="carrom.jpg" alt="">
+                <div class="des">
+                    <h3>Carrom</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="carroml_btn" onclick="enterWinner()"><a href="#">Enter Winner&#10137;</a></button>
+                        <button class="org" id="carroml_btn" disabled>Next Round&#10137;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game">
+                <img src="ludo.jpg" alt="">
+                <div class="des">
+                    <h3>Ludo</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="ludol_btn" onclick="enterWinner()"><a href="#">Enter Winner&#10137;</a></button>
+                        <button class="org" id="ludol_btn" disabled>Next Round&#10137;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="game">
+                <img src="e-sports.png" alt="">
+                <div class="des">
+                    <h3>E-Sports</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="el_btn" onclick="enterWinner()"><a href="#">Enter Winner&#10137;</a></button>
+                        <button class="org" id="el_btn" disabled>Next Round&#10137;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sports" class="section-p1">
+        <h2>Sports</h2>
+        <div class="sp-container">
+            <div class="sport">
+                <img src="volley.jpg" alt="">
+                <div class="des">
+                    <h3>Volleyball</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="volleyl_btn" onclick="enterWinner()"><a href="#">Enter Winner&#10137;</a></button>
+                        <button class="org" id="volleyl_btn" disabled>Next Round&#10137;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sport">
+                <img src="foot.jpg" alt="">
+                <div class="des">
+                    <h3>Football</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="footl_btn" onclick="enterWinner()"><a href="#">Enter Winner&#10137;</a></button>
+                        <button class="org" id="footl_btn" disabled>Next Round&#10137;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sport">
+                <img src="crick.jpg" alt="">
+                <div class="des">
+                    <h3>Cricket</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="crickl_btn" onclick="enterWinner()"><a href="#">Enter Winner&#10137;</a></button>
+                        <button class="org" id="crickl_btn" disabled>Next Round&#10137;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sport">
+                <img src="tugofwar.png" alt="">
+                <div class="des">
+                    <h3>Tug of War</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="towl_btn" onclick="enterWinner()"><a href="#">Enter Winner&#10137;</a></button>
+                        <button class="org" id="towl_btn" disabled>Next Round&#10137;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="races" class="section-p1">
+        <h2>Races</h2>
+        <div class="r-container">
+            <div class="race">
+                <img src="relay.png" alt="">
+                <div class="des">
+                    <h3>Relay</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="relayl_btn" onclick="enterWinner()"><a href="#">Enter Winner&#10137;</a></button>
+                        <button class="org" id="relayl_btn" disabled>Next Round&#10137;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="race">
+                <img src="hund.png" alt="">
+                <div class="des">
+                    <h3>100m</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="100l_btn" onclick="enterWinner()"><a href="#">Enter Winner&#10137;</a></button>
+                        <button class="org" id="100l_btn" disabled>Next Round&#10137;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="race">
+                <img src="two-hund.png" alt="">
+                <div class="des">
+                    <h3>200m</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="200l_btn" onclick="enterWinner()"><a href="#">Enter Winner&#10137;</a></button>
+                        <button class="org" id="200l_btn" disabled>Next Round&#10137;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="race">
+                <img src="marathon.png" alt="">
+                <div class="des">
+                    <h3>Marathon</h3>
+                    <div class="buttons">
+                        <button class="org-winner" data-delete-loser-btn-id="marathonl_btn" onclick="enterWinner()"><a href="#">Enter Winner&#10137;</a></button>
+                        <button class="org" id="marathonl_btn" disabled>Next Round&#10137;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script>
+        function enterWinner(button) {
+            var deleteLoserBtnId = button.dataset.deleteLoserBtnId;
+            enableDeleteLoserButton(deleteLoserBtnId);
+        }
+
+        function enableDeleteLoserButton(btnId) {
+            var deleteLoserBtn = document.getElementById(btnId);
+            deleteLoserBtn.disabled = false;
+        }
+    </script>
+
+</body>
+
+</html>

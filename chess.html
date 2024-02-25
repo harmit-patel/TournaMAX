@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="chess.css">
+    <title>Chess Registration</title>
+</head>
+
+<body>
+    <script>
+        function showPopup() {
+            alert("Entry Submitted Successfully!");
+            document.getElementById("registrationForm").reset(); // Clear form fields
+        }
+    </script>
+    <form action="http://localhost/TournaMAXfinal/chess_submit.php" method="post" onsubmit="showPopup()">
+        <h1>Registration From</h1>
+        <label for="captainName">Player Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="captainName">Player ID:</label><br>
+        <input type="text" id="id" name="id"  required><br>
+        <label for="captainName">Phone No.</label><br>
+        <input type="tel" id="phone" name="phone"  required><br>
+        <label for="captainName">Branch:</label><br>
+        <input type="text" id="branch" name="branch" required><br>
+        <label for="captainName">Sem:</label><br>
+        <input type="text" id="sem" name="sem" required><br>
+        <label for="captainName">Email:</label><br>
+        <input type="email" id="email" name="email"  required><br>
+        <input type="submit" class="submit" value="Register">
+    </form>
+</body>
+
+</html>

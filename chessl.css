@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    font-weight: 500;
+}
+
+body {
+    width: 100%;
+    margin: 0; 
+}
+
+.a {
+    background: linear-gradient(rgba(104, 104, 235, 0.8), rgba(0, 0, 0, 0.8)), url("chessl-bkg.jpg");
+    background-size: cover;
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cont {
+    text-align: center; 
+}
+.b{
+    background: rgb(237, 233, 233);
+    opacity: 0.8;
+    box-shadow: 5px 5px 5px rgba(255,255,255,0.1);
+    background: none;
+    height: 130px;
+    width: 500px;
+}
+.a .b h2{
+    font-size: 22px;
+    padding: 20px 4px;
+    color: #cce
+}
+.a .b input[type="submit"]{
+    color:rgb(92, 57, 125);
+    font-weight: bold;
+    border: 1px solid rgb(169, 236, 199);
+    background: rgb(222, 241, 219);
+    border-radius: 12px;
+    height: 25px;
+    width: 180px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}

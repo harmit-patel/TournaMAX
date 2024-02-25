@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | TournaMAX</title>
+<link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo1.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a  href="index.html">Home</a></li>
+                <li><a href="ad_login.html">Admin</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="container">
+		<div class="contact-box">
+			<div class="right">
+				<h2>Contact Us</h2>
+                <form action="contact_db.php" method="POST">
+				<input type="text" class="field" id="name" name="name" placeholder="Your Name" onkeyup="checkFilled()" required>
+				<input type="text" class="field" id="email" name="email" placeholder="Your Email" onkeyup="checkFilled()" required>
+				<input type="text" class="field" id="phone" name="mobile" placeholder="Phone" onkeyup="checkFilled()" required>
+				<textarea placeholder="Message" id="message" name="message" class="field" onkeyup="checkFilled()" required></textarea>
+				<button class="btn">Send</button></form>
+			</div>
+		</div>
+	</div>
+    <script>
+                    function checkFilled() {
+                        var interests = document.getElementsByClassName("field");
+                        for (var i = 0; i < interests.length; i++) {
+                            if (interests[i].value == '') {
+                                interests[i].style.backgroundColor = 'rgb(27 26 26 / 60%)';
+                            } else {
+                                interests[i].style.backgroundColor = 'white';
+                                interests[i].style.color = 'black';
+                                interests[i].style.fontWeight = 'bold';
+                            }
+                        }
+                    }
+     </script>
+</body>
+</html>

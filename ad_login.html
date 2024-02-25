@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad_login</title>
+    <link rel="stylesheet" href="ad_login.css">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo1.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="ad_login.html">Admin</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+    <div class="container">
+        <div class="form-box">
+            <h1 id="title">Sign In</h1>
+            <form action="http://localhost/TournaMAXfinal/admin.php" method="post">
+            <div class="input-group">
+                <!--<div class="input-field" id="nameField">
+                    
+                        <input type="text" placeholder="Name">
+                </div>-->
+                <div class="input-field">
+                    
+                        <input type="email" name="email" placeholder=" Admin Email" required>
+                </div>
+                <div class="input-field">
+                    
+                        <input type="password" name="pwd" placeholder="Password" required>
+                </div>
+            </div>
+            <div class="btn-field">
+                <!--<button type="button" id="signupbtn">Sign up</button>-->
+                <input type="submit" id="signinbtn" class="disable" placeholder="Sign In">
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

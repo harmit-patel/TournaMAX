@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chess_Entry</title>
+    <link rel="stylesheet" href="chess_entry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <section id="header">
+        <a href="#"><img src="logo1.png" class="logo" alt="logo"></a>
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="ad_login.html">Admin</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="info">
+        <div class="chess">
+            <h1>Chess...</h1>
+        </div>
+        <h2>Rules for participation &#10137;</h2>
+        <span>Every participant should follow these rules...</span>
+        <ul class="rules slideshow">
+            <li>Fair Play: Participants must adhere to fair play principles, refraining from using chess engines or receiving external assistance during games.</li>
+            <li>Respectful Conduct: Participants are expected to treat others with respect and refrain from engaging in any form of harassment, discrimination, or abusive behavior.</li>
+            <li>Account Security: Participants are responsible for maintaining the security of their accounts and must not share their login credentials with anyone else.</li>
+            <li>Intellectual Property: Participants must respect intellectual property rights when sharing content on the website, refraining from posting copyrighted material without proper authorization.</li>
+            <li>Reporting Violations: Participants are encouraged to promptly report any violations of the rules or instances of suspicious behavior to the website administrators.</li>
+            <li>Privacy Policy: Participants should familiarize themselves with the website's privacy policy to understand how their personal information is collected, stored, and used.</li>
+            <li>Moderation: The website reserves the right to moderate content, enforce the rules, and take appropriate action against participants who violate them, including warnings, suspensions, or bans.</li>
+            <li>Venue Reporting: Every participent should report to their designated venue 15 minutes ealry of their given time</li>
+            <li>Medical Emergency: In case of medical mergency, we have a dedicated medical team</li>
+            <div id="reg">
+                <h4>Register here&#10137;</h4>
+                <button><a href="chess.html">Registration</a></button>
+                <form action="http://localhost/TournaMAXfinal/unimail.php" method="post">
+                    <input type="submit" value="View-Matches"></form>
+                    <form action="http://localhost/TournaMAXfinal/chesswinner.php" method="post">
+                    <input type="submit" value="Winners"></form>
+            </div>
+        </ul>
+    </section>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        var rules = document.querySelectorAll('.slideshow li');
+        var index = 0;
+
+        function showRule() {
+            if (index < rules.length) {
+                rules[index].style.display = 'block';
+                index++;
+                setTimeout(showRule, 1000); // Change slide every 1 second
+            }
+        }
+
+        showRule();
+    });
+    </script>  
+</body>
+</html>
